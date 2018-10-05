@@ -13,15 +13,15 @@ source ~/.bashrc
 
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 
-sudo apt update -y
-sudo apt dist-upgrade -y
-sudo apt upgrade -y
-
 sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
 wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 sudo apt update
 
 sudo apt install gazebo9 libgazebo9-dev
+
+sudo apt update -y
+sudo apt dist-upgrade -y
+sudo apt upgrade -y
 
 echo "export SVGA_VGPU10=0" >> ~/.bashrc
 
