@@ -2,8 +2,6 @@ sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.ustc.edu.cn/ros/ubunt
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 
 sudo apt update -y
-sudo apt dist-upgrade -y
-sudo apt upgrade -y
 
 sudo apt install ros-melodic-desktop-full -y
 
@@ -14,6 +12,10 @@ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
+
+sudo apt update -y
+sudo apt dist-upgrade -y
+sudo apt upgrade -y
 
 curl -sSL http://get.gazebosim.org | sh
 
