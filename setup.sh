@@ -19,6 +19,8 @@ sudo apt upgrade -y
 
 curl -sSL http://get.gazebosim.org | sh
 
+echo "export SVGA_VGPU10=0" >> ~/.bashrc
+
 echo 'export ROS_MASTER_URI=http://192.168.120.130:11311' >> ~/.bashrc
 echo 'export ROS_HOSTNAME=192.168.120.130' >> ~/.bashrc
 echo 'export ROS_IP=192.168.120.130' >> ~/.bashrc
