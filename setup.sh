@@ -17,7 +17,7 @@ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `ls
 wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 sudo apt update
 
-sudo apt install gazebo9 libgazebo9-dev
+sudo apt install gazebo9 libgazebo9-dev -y
 
 sudo apt update -y
 sudo apt dist-upgrade -y
